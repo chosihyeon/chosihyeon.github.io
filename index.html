@@ -1,121 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles02.css">
-    <title>Document</title>
+<title>조시현 홈페이지</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+<!-- Font Awesome icons (free version)-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+<!-- CSS styling -->
+<style>
+  .social-links {
+        display: flex; /* 아이콘을 가로 정렬하기 위해 인라인 블록 요소*/
+        align-items: center; 
+        width: 100px; /* 아이콘의 너비 조정 */
+        height: 100px;
+        margin-right: 100px;
+        font-size: 4rem;
+        cursor: pointer;
+        color:rgb(251, 244, 242);
+       
+    }
+    .social-description {
+        font-size: 1rem;
+        margin-left: 5px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .icon-container {
+    display: flex; /* 아이콘과 설명을 수평으로 배치하기 위해 플렉스 박스 사용 */
+    align-items: center; /* 수직 가운데 정렬 */
+  }
+
+
+  
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
 </head>
+<body class="w3-black">
 
-<body class="grid-container">
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="./sihyeon.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#study" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>STUDY</p>
+  </a>
+  <a href="#project" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PROJECT</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#study" class="w3-bar-item w3-button" style="width:25% !important">STUDY</a>
+    <a href="#project" class="w3-bar-item w3-button" style="width:25% !important">PROJECT</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> SI HYEON CHO </h1>
+    <h6>Developer</h6>
+    <img src="./sihyeon.jpg" alt="sihyeon" width="992" height="1008">
+  </header>
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="#">
+    <h2 class="w3-text-light-grey">Introduction</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <br ><h3 class="w3-text-light-grey">안녕하세요!</h3>
+    <h3 class="w3-text-light-grey"> 노력하는 열정적인 개발자 조시현입니다!</h3></br>
+    <br><p>저는 기술의 매력에 빠져 새로운 도전을 즐기며, 지식의 바다에서 끊임없이 배우고자 합니다.</p>
+    <p>기술적인 문제를 해결하는 것 뿐만 아니라, 사용자의 다양한 요구를 이해하고 그에 맞는 해결책을 제공하는 것이 제가 추구하는 목표입니다.</p>
+    <p> 저의 목표는 기술적인 역량과 커뮤니케이션 능력을 조화롭게 발전시켜, 사용자들에게 최상의 서비스를 제공하는 것입니다. </p> 
+    <p> 여러분과 함께하며 더 나은 미래를 만들어가는 여정을 함께하고 싶습니다. 협업을 통해 성장하고 발전하는 모습을 보여드리겠습니다. 같이 더 많은 꿈을 이루어 나가요!</p><br>
+    
+ 
+          <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+            <div class="info-box">
+              <i class="bx bx-share-alt"></i>
+              <h2 class="w3-text-light-grey">Social Profiles</h2>
+              <hr style="width:200px" class="w3-opacity">
+              <br><br><br><div class="container"><div>
+              <div class="row">
+                <div class="social-links">
+                <div><a class="social-links" href="https://www.notion.so/b73439d34540415fbfa592faabb67222?pvs=4" class="notion"><i class="bi bi-card-list"></i></a>
+                <p class="social-description">notion</p></div>
+                <div><a class="social-links" href="https://www.instagram.com/tlgus_0312?igsh=cmh6bHhmOWZ1dGpl&utm_source=qr" class="instagram"><i class="bi bi-instagram"></i></a>
+                <p class="social-description">instagram</p></div>
+                <div><a class="social-links" href="https://github.com/chosihyeon" class="github"><i class="bi bi-github"></i></a>
+                <p class="social-description">Github</p></div>
+                <div><a class="social-links" href="https://www.acmicpc.net/user/tlgus0312" class="Baekjoon"><i class="bi bi-award-fill"></i></a>
+                <p class="social-description">Baekjoon</p></div></div></br></div></br>
+              </div>
+            </div>
+          </div>
+      </div>
+    
+   
+    
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="study">
+    <h2 class="w3-text-light-grey">My projects</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Projects Section-->
+<section class="py-5">
+  <div class="container px-5 mb-5">
+      </div>
+      <div class="row gx-5 justify-content-center">
+          <div class="col-lg-11 col-xl-9 col-xxl-8">
+              <!-- Project Card 1-->
+              <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                  <div class="card-body p-0">
+                      <div class="d-flex align-items-center">
+                          <div class="p-5">
+                              <h2 class="fw-bolder">Project Name 1</h2>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                          </div>
+                          <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="...">
+                      </div>
+                  </div>
+              </div>
+              <!-- Project Card 2-->
+              <div class="card overflow-hidden shadow rounded-4 border-0">
+                  <div class="card-body p-0">
+                      <div class="d-flex align-items-center">
+                          <div class="p-5">
+                              <h2 class="fw-bolder">Project Name 2</h2>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                          </div>
+                          <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="...">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/sailboat.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="/w3images/chef.jpg" style="width:100%">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/p6.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+
+    <div class="w3-padding-64 w3-content w3-text-grey" id="project">
+      <h4>Team members</h4>
+      <h2 class="w3-text-light-grey"></h2>
+      <hr style="width:200px" class="w3-opacity">
+    </p><div id="project">
+      
+      <ul>
+          <li><a href="https://github.com/Minsoolee12345" target="_blank">이민수</a></li>
+          <li><a href="https://github.com/0joong" target="_blank">김영중</a></li>
+          <li><a href="https://github.com/AoKuShi" target="_blank">김태환</a></li>
+           <!--
+    
+        <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+    <p>
 
     
-        <header>
-            <h1>조시현의 홈페이지</h1>
-        
-    </header>
-    <nav>    
+    -->
+      </ul>
+  </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> korea</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: tlgus0312@naver.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
     
-            <ul>
-                <li><a href="#intro">내소개</a></li>
-                <li><a href="#study">SW공부</a></li>
-                <li><a href="#project">프로젝트 팀원</a></li>
-            </ul>
-        
-    </nav>
-        <div id="introduction">
-            <img src="KakaoTalk_20240320_162045368.jpg" alt="고양이 사진" width="320" />
-            <p>한국폴리텍 성남캠퍼스 인공지능소프트웨어과</p>
-            <p>전화번호: 010-2646-4596</p>
-            <p>이메일: tlgus0312@naver.com</p>
-            
-            <p>조시현의 홈페이지에 오신 것을 환영합니다. 이 홈페이지는 인터페이스 디자인실습 강의의 실습 예제로 만들었습니다. 오늘 처음으로 글자태그를 배우고 있는데, 열심히 배워서 멋진 홈페이지를 만들어 보겠습니다.</p>
-            <p>글자태그를 배우고 나서 빨리 목록 태그도 배워서 저에 대해서 목록으로 표현을 할 수 있으면 좋겠습니다. 오늘 강의에서 목록태그를 배우고 나면, 제 홈페이지에 저에 대한 몇 가지 사실을 목록 태그를 활용하여 알려드릴게요.</p>
-        </div>
-
-        <div id="study">
-            
-            <h2>지금 SW를 공부하고 있어요</h2>
-            <table border="1">
-                <caption>
-                    <h5>이번 학기에 배우는 과목</h5>
-                </caption>
-                <thead>
-                    <tr>
-                        <td>
-                            <h4>과목</h4>
-                        </td>
-                        <td>
-                            <h4>시간</h4>
-                        </td>
-                        <td>
-                            <h4>과목 설명</h4>
-                        </td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>인터페이스 디자인 실습</td>
-                        <td>
-                            화 오전 10:30~11:45 <br />
-                            금 오전 9:00~10:15
-                        </td>
-                        <td>웹페이지 만들기 위한 HTML, CSS, JavaScript</td>
-                    </tr>
-
-                    <tr>
-                        <td>Java기초</td>
-                        <td>
-                            화 오전 9:00~10:30 <br />
-                            수 오전 10:30~11:50
-                        </td>
-                        <td>Java기초</td>
-                    </tr>
-
-                    <tr>
-                        <td>컴퓨터구조(+운영체제)</td>
-                        <td>
-                            목 오전 9:00~11:50
-                        </td>
-                        <td>컴퓨터구조와 운영체제</td>
-                    </tr>
-
-                    <tr>
-                        <td>알고리즘</td>
-                        <td>
-                            수 오전 9:00~10:30 <br />
-                            금 오전 10:30~11:50
-                        </td>
-                        <td>알고리즘</td>
-                    </tr>
-
-                    <tr>
-                        <td>데이터베이스</td>
-                        <td>
-                            화 오후 12:50~15:40
-                        </td>
-                        <td>데이터베이스</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <ul>
-                <li><a href="https://www.acmicpc.net/user/tlgus0312">나의 BOJ현황</a></li>
-                <li><a href="https://github.com/chosihyeon">GITHUB 현황</a></li>
-            </ul>
-        </div>
-
-        
-        <div id="project">
-            <h4>나랑 같이 프로젝트를 하고 있는 팀원</h4>
-            <ul>
-                <li><a href="https://github.com/Minsoolee12345" target="_blank">이민수</a></li>
-                <li><a href="https://github.com/0joong" target="_blank">김영중</a></li>
-                <li><a href="https://github.com/AoKuShi" target="_blank">김태환</a></li>
-            </ul>
-        </div>
     
-</body>
+    
+  <!-- End footer -->
+  </footer>
 
+<!-- END PAGE CONTENT -->
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script></body>
 </html>
